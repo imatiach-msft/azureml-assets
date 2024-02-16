@@ -42,7 +42,7 @@ def _submit_generation_safety_quality_model_monitor_job(
             model_deployment_name="gpt-4",
             sample_rate=1,
             monitor_current_time="2023-02-02T00:00:00Z",
-            workspace_connection_arm_id="test_connection",
+            workspace_connection_arm_id="/subscriptions/a75ae43f-9f72-4699-ba66-d3a173cfe082/resourceGroups/ilmatdpv2rg3/providers/Microsoft.MachineLearningServices/workspaces/ilmatdpv2ws3/connections/rai_dev_openai",
             prompt_column_name="question",
             completion_column_name="answer"
         )

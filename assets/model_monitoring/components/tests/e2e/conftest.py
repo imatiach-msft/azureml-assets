@@ -26,7 +26,7 @@ lock_file = ".lock"
 
 
 def _get_subscription_id():
-    return os.environ.get("SUBSCRIPTION_ID", "")
+    return os.environ.get("SUBSCRIPTION_ID", "a75ae43f-9f72-4699-ba66-d3a173cfe082")
 
 
 def _get_tenant_id():
@@ -34,11 +34,11 @@ def _get_tenant_id():
 
 
 def _get_resource_group():
-    return os.environ.get("RESOURCE_GROUP", "")
+    return os.environ.get("RESOURCE_GROUP", "ilmatdpv2rg3")
 
 
 def _get_workspace_name():
-    return os.environ.get("WORKSPACE_NAME", "")
+    return os.environ.get("WORKSPACE_NAME", "ilmatdpv2ws3")
 
 
 def _is_main_worker(worker_id):
