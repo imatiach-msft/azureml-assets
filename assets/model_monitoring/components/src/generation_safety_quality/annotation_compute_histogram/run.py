@@ -21,9 +21,9 @@ import json
 import uuid
 
 import pandas as pd
-from promptflow.core import AzureOpenAIModelConfiguration
-from promptflow.evals.evaluate import evaluate
-from promptflow.evals.evaluators import (
+from azure.ai.evaluation._model_configurations import AzureOpenAIModelConfiguration
+from azure.ai.evaluation import (
+    evaluate,
     CoherenceEvaluator,
     FluencyEvaluator,
     GroundednessEvaluator,
