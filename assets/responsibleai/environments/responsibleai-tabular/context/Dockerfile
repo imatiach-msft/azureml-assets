@@ -51,6 +51,8 @@ RUN pip install 'Werkzeug>=3.0.3'
 RUN pip install 'tqdm>=4.66.3'
 # vulnerability of requests GHSA-9hjg-9r4m-mvj7
 RUN pip install 'requests>=2.32.4'
+# vulnerability for mlflow GHSA-wxj7-3fx5-pp9m
+RUN pip install 'mlflow>=3.1.0'
 
 # clean conda and pip caches
 RUN conda run -p $CONDA_PREFIX pip cache purge && \
